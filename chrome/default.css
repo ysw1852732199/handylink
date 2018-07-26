@@ -1,38 +1,47 @@
-.linkweb { 
+.handlylink { 
 	z-index:10000;
-	width:120px; 
-	background-color:none;
+	width: 80px;
+	height: 220px;
+	background-color: white;
 	position:fixed;
-	right:15px;
-	top:200px; 
+	right: 10px;
+	top: 80px;
 }
-li
-{
+
+.handlylink ul{
+	width: 80px;
+	margin: 0px 0px;
+	padding: 0px 0px;
+}
+
+.handlylink li{
+	height: 16px;
+	line-height: 16px;
+	font-size: 16px;
+	margin: 5px 0px 5px 0px;
+	padding: 0px 0px 0px 10px;
 	list-style-type: none;
-}
-.linkweb li{
-	height: 12px;
-	padding: 0px 0px 13px 6px;
 	vertical-align: middle;
 	text-align: left;
 	background:none;
 }
-a
+
+.handlylink a
 {
 	color:#000;
 	text-decoration:none;
 	outline:none;
 }
-a:link {
+.handlylink a:link {
 	text-decoration:none;
 }
-a:visited {
+.handlylink a:visited {
 	text-decoration:none;
 }
-a:hover {
+.handlylink a:hover {
 	color:#ff0000;
 	text-decoration:underline;
 }
-a:active {
+.handlylink a:active {
 	text-decoration:none;
 }
