@@ -1,20 +1,20 @@
-.handlylink { 
+.handylink {
 	z-index:10000;
 	width: 80px;
-	height: 220px;
+	height: 250px;
 	background-color: white;
 	position:fixed;
 	right: 10px;
 	top: 80px;
 }
 
-.handlylink ul{
+.handylink ul{
 	width: 80px;
 	margin: 0px 0px;
 	padding: 0px 0px;
 }
 
-.handlylink li{
+.handylink li{
 	height: 16px;
 	line-height: 16px;
 	font-size: 16px;
@@ -26,22 +26,22 @@
 	background:none;
 }
 
-.handlylink a
+.handylink a
 {
 	color:#000;
 	text-decoration:none;
 	outline:none;
 }
-.handlylink a:link {
+.handylink a:link {
 	text-decoration:none;
 }
-.handlylink a:visited {
+.handylink a:visited {
 	text-decoration:none;
 }
-.handlylink a:hover {
+.handylink a:hover {
 	color:#ff0000;
 	text-decoration:underline;
 }
-.handlylink a:active {
+.handylink a:active {
 	text-decoration:none;
 }

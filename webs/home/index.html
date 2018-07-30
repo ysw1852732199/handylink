@@ -1,0 +1,16 @@
+<el-container>
+    <el-header>
+        <el-row class="handylink-header">
+            <el-col :span="16">
+                <el-input placeholder="请输入网站" v-model="website">
+                    <template slot="prepend">https://www.</template>
+                    <template slot="append">.com</template>
+                </el-input>
+            </el-col>
+            <el-col :offset="2" :span="6">
+                <el-button type="primary" @click="openUrl">打开</el-button>
+            </el-col>
+        </el-row>
+    </el-header>
+    <el-main>{{ url }}</el-main>
+</el-container> 
