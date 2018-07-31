@@ -1,13 +1,12 @@
 define([
-    'text!explore/explore.html',
+    'text!./me.html',
   ], function(Template) {
     'use strict';
     return {
-      name: "explore",
+      name: "me",
       template: Template,
       data: function() {
         return {}
       }
     }
   });
-  

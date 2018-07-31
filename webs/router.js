@@ -1,13 +1,13 @@
 // ES5
-define(["vueRouter", "home/router"], function(vueRouter, home){
-    console.log("aaaa", home);
+define(["vueRouter", "home/router", "explore/router"], function(vueRouter, home, explore){
     return new vueRouter({
             routes: [{
                     path: '/',
                     name: 'root',
                     redirect: 'home'
                 },
-                home
+                home,
+                explore
             ]
         })
     }

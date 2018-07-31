@@ -15,7 +15,6 @@ define([
   // 'elementUI'
 ], function(router) {
   'use strict';
-  console.log("vvvv", router);
   let app = new Vue({
       router: router
     }).$mount('#app');

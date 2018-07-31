@@ -1,8 +1,21 @@
-<el-container>
-    <el-aside width="200px">
-        <ul>
-            <li></li>
-        </ul>
+<el-container style="height: 100%">
+    <el-aside width="220px" style="height: 100%">
+        <el-menu style="height: 100%">
+            <el-menu-item index="1">
+                <router-link to="/explore/">关于我</router-link>
+            </el-menu-item>
+            <el-menu-item index="2">
+                <router-link to="/explore/todo">待开发功能</router-link>
+            </el-menu-item>
+            <el-menu-item index="3">
+                <router-link to="/explore/alipay">支付宝付款</router-link>
+            </el-menu-item>
+            <el-menu-item index="4">
+                <router-link to="/explore/wxpay">微信付款</router-link>
+            </el-menu-item>
+        </el-menu>
     </el-aside>
-    <el-main>Main</el-main>
+    <el-main style="height: 100%">
+        <router-view></router-view>
+    </el-main>
 </el-container> 

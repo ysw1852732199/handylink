@@ -1,6 +1,5 @@
 // ES5
 define(["home/index"], function(Home) {
-    console.log("home", Home);
     return {
             path: "/home",
             name: "home",
