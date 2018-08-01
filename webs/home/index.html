@@ -14,11 +14,29 @@
         </el-row>
     </el-header>
     <el-main class="handylink-main">
+        <!-- 新闻资讯 -->
         <el-card>
             <div slot="header" class="clearfix">
-                <span>卡片名称</span>
-                <el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button>
+                <span>新闻资讯</span>
+                <el-button style="float: right; padding: 3px 0" type="text">更多</el-button>
             </div>
+            <el-row v-for="row_news in links.news">
+                <el-col v-for="(link, index) in row_news" :span="4">
+                    <a :href='link.href'>{{ link.name }}</a>
+                </el-col>
+            </el-row>
+        </el-card>
+        <!-- 科技 -->
+        <el-card style="margin-top: 20px;">
+            <div slot="header" class="clearfix">
+                <span>科技</span>
+                <el-button style="float: right; padding: 3px 0" type="text">更多</el-button>
+            </div>
+            <el-row v-for="row_news in links.tech">
+                <el-col v-for="(link, index) in row_news" :span="4">
+                    <a :href='link.href'>{{ link.name }}</a>
+                </el-col>
+            </el-row>
         </el-card>
     </el-main>
 </el-container>

@@ -1,5 +1,6 @@
 // file name :test.js
 const express  = require('express');
+const home_link = require('./api/home');
 const app  = express();
 const router = express.Router();
 // 处理/api/login的post请求
@@ -11,9 +12,8 @@ router.post('/api/login',function(req,res){
 });
 
 // 处理/api/mylinks的post请求
-router.get('/api/mylinks', function(req,res) {
-    res.sendfile('./api/links.json') ;
-});
+router.get('/api/mylinks', home_link.getLinks);
+router.get('/api/mylinks/:type', home_link.getLinks);
 app.use(router);
 
 // 处理静态文件

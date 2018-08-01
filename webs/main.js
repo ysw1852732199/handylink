@@ -5,6 +5,7 @@ require.config({
     "vueRouter": "libs/vue-router/vue-router",
     // "elementUI": "libs/element-ui/element",
     'text': '/libs/require.text',
+    "axios": "/libs/axios"
   }
 });
 

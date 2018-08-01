@@ -1,6 +1,13 @@
 ## 技术栈 ## 
-前端：vue.js element-ui require.js ES5  
-后端：node.js
+前端：  
+* vue.js -- 前端框架  
+* element-ui -- ui框架  
+* require.js -- 大部分浏览器不支持import和export，故使用require.js替代。  
+* axios -- 后台交互  
+* ES5/ES6语法  
+后端：  
+* node.js  
+* express -- web 开发框架  
 
 ## 本地启动 ##
 * 下载并安装node.js  
