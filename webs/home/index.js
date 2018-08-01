@@ -7,18 +7,12 @@ define([
     template: Template,
     data: function() {
       return {
-        website: "handylink"
+        searchText: ""
       }
     },
     methods: {
-      openUrl: function() {
-        window.open(`https://www.${this.website}.com`, "_blank")
-      }
-    },
-    computed: {
-      url: function() {
-        console.log(this.website);
-        return `https://www.${this.website}.com`;
+      search: function() {
+        window.open(`https://www.baidu.com/s?wd=${this.searchText}`, "_blank");
       }
     }
   }
