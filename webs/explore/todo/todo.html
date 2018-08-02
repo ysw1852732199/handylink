@@ -1,7 +1,28 @@
-<ul>
-    <li>前端开发</li>
-    <li>域名对接，解析到阿里云服务器</li>
-    <li>后端开发，部署</li>
-    <li>捐赠功能，支持支付宝，微信付款</li>
-    <li>对接百度广告联盟</li>
-</ul>
+<el-row>
+    <el-card>
+        <div style="height: 40px">待完成功能</div>
+        <el-table
+            :data="todoFuns"
+            style="width: 100%">
+            <el-table-column
+                v-for="column in titles"
+                :prop="column.data"
+                :label="column.title"
+                :width="column.width">
+            </el-table-column>
+        </el-table>
+    </el-card>
+    <el-card  style="margin-top: 20px">
+        <div style="height: 40px">已完成功能</div>
+        <el-table
+            :data="doneFuns"
+            style="width: 100%">
+            <el-table-column
+                v-for="column in titles"
+                :prop="column.data"
+                :label="column.title"
+                :width="column.width">
+            </el-table-column>
+        </el-table>
+    </el-card>
+</el-row>
