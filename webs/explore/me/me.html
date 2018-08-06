@@ -1,4 +1,65 @@
-<p>
-    姓名：杨春
-    性别：男
-</p>
+<el-collapse v-modal="1">
+    <el-collapse-item title="● 基本信息" name="1">
+        <div style="padding: 0 20px;">
+            <div style="float: left; width: 40%;">
+                <div style="line-height: 50px;">
+                    <label>姓名：</label>
+                    <span>杨春</span>
+                </div>
+                <div style="line-height: 50px;">
+                    <label>名族：</label>
+                    <span>汉</span>
+                </div>
+                <div style="line-height: 50px;">
+                    <label>学历：</label>
+                    <span>本科</span>
+                </div>
+                <div style="line-height: 50px;">
+                    <label>电话：</label>
+                    <span>17512539648</span>
+                </div>
+            </div>
+            <div style="float: left; width: 40%;">
+                <div style="line-height: 50px;">
+                    <label>姓别：</label>
+                    <span>男</span>
+                </div>
+                <div style="line-height: 50px;">
+                    <label>身高：</label>
+                    <span>170cm</span>
+                </div>
+                <div style="line-height: 50px;">
+                    <label>政治面貌：</label>
+                    <span>老百姓</span>
+                </div>
+                <div style="line-height: 50px;">
+                    <label>邮箱：</label>
+                    <span>825660677@qq.com</span>
+                </div>
+            </div>
+            <div style="float: left; width: 20%;">
+                <img src="/images/head.png"/>
+            </div>
+            <div style="clear: both;">
+                <div style="line-height: 50px;">
+                    <label>住址：</label>
+                    <span>南京市江宁区龙眠大道碧华苑</span>
+                </div>
+            </div>
+        </div>
+    </el-collapse-item>
+    <el-collapse-item title="● 教育背景" name="2">
+        <el-table
+            :data="edus.data"
+            style="width: 100%;padding: 0 20px;">
+            <el-table-column
+                v-for="column in edus.titles"
+                :prop="column.data"
+                :label="column.title"
+                :width="column.width">
+            </el-table-column>
+        </el-table>
+    </el-collapse-item>
+    <el-collapse-item title="● 工作经历" name="3"></el-collapse-item>
+    <el-collapse-item title="● 自我介绍" name="4"></el-collapse-item>
+</el-collapse>
