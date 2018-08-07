@@ -21,7 +21,7 @@
                 <el-button style="float: right; padding: 3px 0" type="text">更多</el-button>
             </div>
             <el-row v-for="row_news in links.news">
-                <el-col v-for="(link, index) in row_news" :span="4">
+                <el-col v-for="(link, index) in row_news" style="text-align: center;" :span="4">
                     <a :href='link.href'>{{ link.name }}</a>
                 </el-col>
             </el-row>
@@ -33,7 +33,19 @@
                 <el-button style="float: right; padding: 3px 0" type="text">更多</el-button>
             </div>
             <el-row v-for="row_news in links.tech">
-                <el-col v-for="(link, index) in row_news" :span="4">
+                <el-col v-for="(link, index) in row_news" style="text-align: center;" :span="4">
+                    <a :href='link.href'>{{ link.name }}</a>
+                </el-col>
+            </el-row>
+        </el-card>
+        <!-- 程序员 -->
+        <el-card style="margin-top: 20px;">
+            <div slot="header" class="clearfix">
+                <span>程序员</span>
+                <el-button style="float: right; padding: 3px 0" type="text">更多</el-button>
+            </div>
+            <el-row v-for="row_news in links.programer">
+                <el-col v-for="(link, index) in row_news" style="text-align: center;" :span="4">
                     <a :href='link.href'>{{ link.name }}</a>
                 </el-col>
             </el-row>

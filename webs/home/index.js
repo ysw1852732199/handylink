@@ -11,7 +11,8 @@ define([
         searchText: "",
         links: {
           news: [],
-          tech: []
+          tech: [],
+          programer: []
         }
       }
     },
@@ -25,10 +26,16 @@ define([
           url:`/api/mylinks/${type}`
         }).then(response=>{
           if (response.status == 200) {
-            this.links[type] = response.data;
-            console.log(response.data);
+            if (type==="") {
+              this.links = response.data;
+            } else {
+              this.links[type] = response.data;
+            }
           }
         });
+      },
+      getAll: function() {
+        this.getLinks("");
       },
       getNews: function() {
         this.getLinks("news");
@@ -38,8 +45,7 @@ define([
       }
     },
     mounted(){
-      this.getNews();
-      this.getTech();
+      this.getAll();
     }
   }
 });

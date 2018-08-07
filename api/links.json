@@ -121,5 +121,12 @@
     ],
     "tech": [
 
+    ],
+    "programer": [
+        [{
+            "id": "link1",
+            "name": "印记中文",
+            "href": "https://docschina.org/"
+        }]
     ]
 }

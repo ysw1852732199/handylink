@@ -10,7 +10,7 @@ function getLinks(req, res) {
     } else if (req.params.type == "top") {
         res_data = links.top;
     } else if (req.params.type == undefined) {
-        res_data = links.top;
+        res_data = links;
     }
     res.json(res_data);
 }
