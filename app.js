@@ -12,7 +12,7 @@ app.use(router);
 app.use(express.static(__dirname + '/webs'));
 // 处理根目录的请求
 app.use(function(req,res){
-    res.sendfile(__dirname + '/webs/index.html') ;
+    res.sendFile(__dirname + '/webs/index.html') ;
 });
 
 app.listen(80) ;

@@ -1,1 +1,1 @@
-nohub node app.js >> app.log &
+nohup node app.js >> ./app.log 2>&1 &
