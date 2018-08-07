@@ -13,3 +13,16 @@
     width: 80%;
     margin: 0 10%;
 }
+
+.handylink-footer {
+    float: right;
+    margin-right: 10%;
+    height: 60px;
+    line-height: 60px;
+    font-size: 10px;
+    color: lightgray;
+}
+
+.handylink-footer a {
+    margin-right: 20px;
+}

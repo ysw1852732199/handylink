@@ -122,11 +122,35 @@
     "tech": [
 
     ],
-    "programer": [
-        [{
-            "id": "link1",
+    "office": [[
+        {
+            "id": "link00",
+            "name": "熊猫办公",
+            "href": "http://www.tukuppt.com/",
+            "tips": "为用户提供优质创意办公服务，让个人及企业用户节省时间和人力成本，提高办公效率。"
+        },{
+            "id": "link01",
+            "name": "小众软件",
+            "href": "https://www.appinn.com",
+            "tips": "分享免费、小巧、实用、有趣、绿色的软件。"
+        },{
+            "id": "link02",
+            "name": "石墨文档",
+            "href": "https://shimo.im/",
+            "tips": "可多人实时协作的云端文档与表格。"
+        }
+    ]],
+    "programer": [[
+        {
+            "id": "link00",
             "name": "印记中文",
-            "href": "https://docschina.org/"
+            "href": "https://docschina.org/",
+            "tips": "印记中文出品，唯一与官方文档同步的中文文档"
+        },{
+            "id": "link01",
+            "name": "ShowDoc",
+            "href": "https://docschina.org/",
+            "tips": "一个非常适合IT团队的在线API文档、技术文档工具"
         }]
     ]
 }
