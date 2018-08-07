@@ -1,0 +1,1 @@
+nohub node app.js >> app.log &
