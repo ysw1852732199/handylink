@@ -40,13 +40,17 @@
             "id": "link10",
             "name": "小众软件",
             "href": "https://www.appinn.com"
+        },{
+            "id": "link11",
+            "name": "更多",
+            "href": "https://www.handylink.cn"
         }
     ],
     "news": [
         [{
             "id": "link1",
-            "name": "百度",
-            "href": "https://www.baidu.com"
+            "name": "百度新闻",
+            "href": "https://news.baidu.com"
         },{
             "id": "link2",
             "name": "新浪",
