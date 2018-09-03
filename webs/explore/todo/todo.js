@@ -41,12 +41,29 @@ define([
             "level": "高",
             "description": "将域名备案之后才能使用，否则无法使用。"
           },{
+            "name": "跳转顶部",
+            "author": "",
+            "bgnTime": "-",
+            "endTime": "-",
+            "level": "低",
+            "description": "给长网页添加一个跳转到顶部的功能",
+            "more": ""
+          },{
+            "name": "跳转顶部",
+            "author": "",
+            "bgnTime": "-",
+            "endTime": "-",
+            "level": "低",
+            "description": "加入百度广告联盟，赚取佣金。",
+            "more": ""
+          },{
             "name": "对接百度",
             "author": "",
             "bgnTime": "-",
             "endTime": "-",
-            "level": "中",
-            "description": "加入百度广告联盟，赚取佣金。"
+            "level": "低",
+            "description": "加入百度广告联盟，赚取佣金。",
+            "more": "赚钱效应不明显，1W PV，一个月才能赚100块钱左右。"
           },{
             "name": "支付功能",
             "author": "",
