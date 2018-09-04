@@ -49,14 +49,6 @@ define([
             "description": "给长网页添加一个跳转到顶部的功能",
             "more": ""
           },{
-            "name": "跳转顶部",
-            "author": "",
-            "bgnTime": "-",
-            "endTime": "-",
-            "level": "低",
-            "description": "加入百度广告联盟，赚取佣金。",
-            "more": ""
-          },{
             "name": "对接百度",
             "author": "",
             "bgnTime": "-",
@@ -113,6 +105,8 @@ define([
             "description": "使用node.js开发一个简答的示例接口。"
           }]
         }
+      },
+      methods: {
       }
     }
   });
