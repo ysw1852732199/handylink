@@ -12,6 +12,9 @@ define(["explore/explore",
         component: Explore,
         children: [{
             path: "",
+            redirect: "me"
+        },{
+            path: "me",
             name: "explore_about_me",
             component: AboutMe
         },{

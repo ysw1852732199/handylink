@@ -26,7 +26,7 @@ window.onscroll = function(){
   var toTop = document.documentElement.scrollTop || document.body.scrollTop;
   //var winHeight = document.documentElement.clientHeight;
   // 如果滚动超过一屏，返回顶部按钮出现，反之隐藏
-  if (toTop > 0) {
+  if (toTop > 20) {
     document.getElementById("scrollTop").style.display = 'block';
   } else {
     document.getElementById("scrollTop").style.display = 'none';
