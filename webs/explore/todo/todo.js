@@ -34,20 +34,19 @@ define([
           }
           ],
           todoFuns: [{
+            "name": "CSS技能学习",
+            "author": "杨春",
+            "bgnTime": "2018/09/05",
+            "endTime": "-",
+            "level": "高",
+            "description": ""
+          },{
             "name": "域名备案",
             "author": "杨春",
             "bgnTime": "2018/08/02",
             "endTime": "-",
             "level": "高",
             "description": "将域名备案之后才能使用，否则无法使用。"
-          },{
-            "name": "跳转顶部",
-            "author": "",
-            "bgnTime": "-",
-            "endTime": "-",
-            "level": "低",
-            "description": "给长网页添加一个跳转到顶部的功能",
-            "more": ""
           },{
             "name": "对接百度",
             "author": "",
@@ -65,6 +64,21 @@ define([
             "description": "捐赠功能，支持支付宝，微信付款。"
           }],
           doneFuns: [{
+            "name": "存储学习",
+            "author": "杨春",
+            "bgnTime": "2018/09/04",
+            "endTime": "2018/09/05",
+            "level": "高",
+            "description": "sessionStorage、localStorage的学习"
+          },{
+            "name": "跳转顶部",
+            "author": "杨春",
+            "bgnTime": "2018/09/04",
+            "endTime": "2018/09/04",
+            "level": "低",
+            "description": "给长网页添加一个跳转到顶部的功能",
+            "more": ""
+          },{
             "name": "HTTPS协议支持",
             "author": "杨春",
             "bgnTime": "2018/08/19",
