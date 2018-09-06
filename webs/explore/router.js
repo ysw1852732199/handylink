@@ -5,7 +5,8 @@ define(["explore/explore",
     "./alipay/alipay",
     "./weixin/pay",
     "./area/area",
-    "./storage/storage"], function(Explore, Todo, AboutMe, AliPay, WeixinPay, Area, Storage) {
+    "./storage/storage",
+    "./session/session"], function(Explore, Todo, AboutMe, AliPay, WeixinPay, Area, Storage, Session) {
     return {
         path: "/explore",
         name: "explore",
@@ -37,6 +38,10 @@ define(["explore/explore",
             path: "storage",
             name: "explore_storage",
             component: Storage
+        },{
+            path: "session",
+            name: "explore_session",
+            component: Session
         }]
     };
 });

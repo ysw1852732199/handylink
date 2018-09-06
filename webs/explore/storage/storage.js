@@ -5,7 +5,7 @@ define([
     return {
         name: "storageDemo",
         template: Template,
-            data: function() {
+        data: function() {
             return {
                 localStorage: {},
                 sessionStorage: {},

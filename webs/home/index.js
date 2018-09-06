@@ -1,7 +1,7 @@
 define([
   'text!home/index.html',
-  'axios'
-], function(Template, axios) {
+  'service/api'
+], function(Template, api) {
   'use strict';
   return {
     name: "home",
@@ -21,10 +21,7 @@ define([
         window.open(`https://www.baidu.com/s?wd=${this.searchText}`, "_blank");
       },
       getLinks: function(type) {
-        axios({
-          method:'get',
-          url:`/api/mylinks/${type}`
-        }).then(response=>{
+        api.getLinks(type).then(response=>{
           if (response.status == 200) {
             if (type==="") {
               this.links = response.data;

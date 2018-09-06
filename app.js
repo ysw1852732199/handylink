@@ -1,11 +1,19 @@
 const express  = require('express');
-const home_link = require('./api/home');
 const app  = express();
-const router = express.Router();
 
-// 处理/api/mylinks的post请求
-router.get('/api/mylinks', home_link.getLinks);
-router.get('/api/mylinks/:type', home_link.getLinks);
+// 绑定session中间件
+const unisession = require('./server/session');
+app.use(unisession.session);
+
+// 注册参数request解析器中间件，参考
+// var multer = require('multer'); // v1.0.5
+// var upload = multer(); // for parsing multipart/form-data
+const bodyParser = require('body-parser');
+app.use(bodyParser.json()); // for parsing application/json
+app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
+
+// 注册api
+const router = require('./server/router');
 app.use(router);
 
 // 处理静态文件

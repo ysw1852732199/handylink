@@ -34,6 +34,27 @@ define([
           }
           ],
           todoFuns: [{
+            "name": "用户登录",
+            "author": "杨春",
+            "bgnTime": "2018/09/06",
+            "endTime": "-",
+            "level": "高",
+            "description": ""
+          },{
+            "name": "文件上传下载",
+            "author": "杨春",
+            "bgnTime": "-",
+            "endTime": "-",
+            "level": "高",
+            "description": ""
+          },{
+            "name": "Session学习",
+            "author": "杨春",
+            "bgnTime": "-",
+            "endTime": "-",
+            "level": "高",
+            "description": "学习使用session,session持久化等等。"
+          },{
             "name": "CSS技能学习",
             "author": "杨春",
             "bgnTime": "2018/09/05",
