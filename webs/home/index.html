@@ -1,5 +1,21 @@
 <el-container>
     <el-header class="handylink-header" style="height: 120px">
+        <el-row>
+            <div style="font-size: 12px;">
+                <span>2018/09/07 15:03</span>
+                <span class="float-right" v-if="username">欢迎你，
+                    <el-dropdown trigger="click" @command="homeDropdownClick">
+                        <span class="el-dropdown-link">
+                            {{username}}<i class="el-icon-arrow-down el-icon--right"></i>
+                        </span>
+                        <el-dropdown-menu slot="dropdown">
+                            <el-dropdown-item command="logout">退出</el-dropdown-item>
+                        </el-dropdown-menu>
+                    </el-dropdown>
+                </span>
+                <span class="float-right" v-else>你好，请<a href="/#/explore/session">登陆</a></span>
+            </div>
+        </el-row>
         <el-row class="handylink-header-search">
             <el-col :span="20">
                 <el-input

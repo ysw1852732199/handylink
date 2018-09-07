@@ -33,7 +33,7 @@ class UnionSession{
                     res.json({"code": 500, message:"登录失败，请重试！"});
                 }
                 req.session.username = userInfo.name;
-                res.json({"code": 200, message:"登录成功!"});
+                res.json({"code": 200, message:"登录成功!", data:userInfo});
             })
         } else {
             res.json({"code": 500, message:"用户名或密码错误！"});
@@ -55,7 +55,7 @@ class UnionSession{
             
             // req.session.loginUser = null;
             res.clearCookie(session_name);
-            res.redirect('/');
+            res.json({"code": 200, message:"退出成功!"});
         });
     }
 }

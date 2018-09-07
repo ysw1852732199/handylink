@@ -17,8 +17,11 @@ define([
         methods: {
             login() {
                 api.login(this.userinfo).then(
-                    data => {
-                        console.log(data);
+                    response => {
+                        if (response.data.code == 200) {
+                            this.$router.push("/home");
+                            window.sessionStorage.setItem("username", response.data.data.name);
+                        }
                     },
                     error => {
                         console.log(error);
@@ -29,8 +32,9 @@ define([
                 api.logout().then(
                     response => {
                         // todo 重定向不知道怎么操作
-                        if (response.status == 302) {
-                            
+                        if (response.data.code == 200) {
+                            this.$router.push("/home");
+                            window.sessionStorage.removeItem("username");
                         }
                     },
                     error => {

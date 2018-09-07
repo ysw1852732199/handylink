@@ -4,14 +4,15 @@ require.config({
     // "vue": "libs/vue/vue",
     "vueRouter": "libs/vue-router/vue-router",
     // "elementUI": "libs/element-ui/element",
-    'text': '/libs/require.text',
-    "axios": "/libs/axios"
+    "text": "/libs/require.text",
+    "axios": "/libs/axios",
+    "js-cookie": "/libs/js.cookie"
   }
 });
 
 define([
   // 'vue',
-  'router',
+  './router',
   // 'vueRouter',
   // 'elementUI'
 ], function(router) {
