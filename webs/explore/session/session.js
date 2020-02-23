@@ -20,7 +20,7 @@ define([
                     response => {
                         if (response.data.code == 200) {
                             this.$router.push("/home");
-                            window.sessionStorage.setItem("username", response.data.data.name);
+                            window.sessionStorage.setItem("username", response.data.data.username);
                         }
                     },
                     error => {
@@ -45,6 +45,9 @@ define([
             clear() {
                 this.userinfo.username = "";
                 this.userinfo.password = "";
+            },
+            register() {
+                this.$router.push("/user/register");
             }
         },
         // computed: {

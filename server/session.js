@@ -3,7 +3,7 @@ const FileStore = require('session-file-store')(session);
 
 // bug: node.js v8.11.3 版本不支持import语法
 // import checkUser from './auth';
-const checkUser = require('./auth');
+const auth = require('./auth/auth');
 const session_name = "ssid";
 
 const session_config = {
@@ -26,7 +26,7 @@ class UnionSession{
     login(req, res) {
         // 学习路径：req，res是express.js里面的对象。
         // 具体请参照文档：http://expressjs.com/en/4x/api.html
-        let userInfo = checkUser(req.body.username, req.body.password);
+        let userInfo = auth.checkUser(req.body.username, req.body.password);
         if (userInfo) {
             req.session.regenerate(function(err){
                 if (err) {

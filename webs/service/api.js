@@ -2,6 +2,7 @@
   define(["axios"], function(axios) {
 
     let instance = axios.create();
+    instance.defaults.headers.common
     instance.defaults.timeout = 2000; //默认超时时间，2秒。
     return {
         login: function(userinfo) {
@@ -22,6 +23,13 @@
                 method:'get',
                 url:`/api/mylinks/${type}`
               })
+        },
+        registerUser: function(userinfo) {
+            return instance({
+                method: 'post',
+                url: '/api/user',
+                data: userinfo
+            })
         }
     }
 });

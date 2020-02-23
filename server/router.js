@@ -1,11 +1,17 @@
 const express  = require('express');
 const home_link = require('./api/home');
 const unisession = require('./session');
+const auth = require('./auth/auth');
 // 注册路由
 const router = express.Router();
+
 // 登录
 router.post('/api/login', unisession.login);
 router.get('/api/logout', unisession.logout);
+
+// 用户管理
+router.post('/api/user', auth.registerUser)
+router.delete('/api/user', auth.removeUser)
 
 // 处理/api/mylinks的post请求
 router.get('/api/mylinks', home_link.getLinks);

@@ -34,6 +34,13 @@ define([
           }
           ],
           todoFuns: [{
+            "name": "标签云",
+            "author": "杨春",
+            "bgnTime": "-",
+            "endTime": "-",
+            "level": "高",
+            "description": ""
+          },{
             "name": "用户登录",
             "author": "杨春",
             "bgnTime": "2018/09/06",

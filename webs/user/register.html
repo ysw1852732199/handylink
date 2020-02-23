@@ -1,0 +1,21 @@
+<div>
+    <el-form label-width="100px" class="handylink-register-form">
+        <el-form-item label="用户名：">
+            <el-input v-model="userinfo.username"></el-input>
+        </el-form-item>
+        <el-form-item label="密  码：">
+            <el-input v-model="userinfo.password"></el-input>
+        </el-form-item>
+        <el-form-item label="确认密码：">
+            <el-input v-model="userinfo.password_confirm"></el-input>
+        </el-form-item>
+        <el-form-item label="性  别：">
+            <el-radio v-model="userinfo.sex" label="male">男</el-radio>
+            <el-radio v-model="userinfo.sex" label="famale">女</el-radio>
+        </el-form-item>
+        <el-form-item>
+            <el-button type="primary" @click="register">注 册</el-button>
+            <el-button @click="cancel">取 消</el-button>
+        </el-form-item>
+    </el-form>
+</div>
