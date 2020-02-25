@@ -41,7 +41,7 @@ define([
             "level": "高",
             "description": ""
           },{
-            "name": "用户登录",
+            "name": "用户管理",
             "author": "杨春",
             "bgnTime": "2018/09/06",
             "endTime": "-",

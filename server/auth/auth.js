@@ -1,4 +1,5 @@
 userManager = require("./user")
+util = require("../util")
 
 // 检查用户是否存在
 function checkUser(userName, userPass) {
@@ -60,8 +61,30 @@ function removeUser(req, res) {
     userManager.removeUser(user)
 }
 
+// 查询所有用户
+function getUsers(req, res) {
+    res.json(userManager.getUsers())
+}
+
+// 查询指定用户
+function getUserById(req, resp) {
+    usesId = req.param.id
+
+    if (util.isNull(usesId)) {
+        res.json({
+            "errorCode": "400000000",
+            "errorMessage": "param is invaid."
+        })
+    }
+
+    userinfo = userManager.getUser(userId)
+    resp.json(userinfo)
+}
+
 module.exports = {
-    "checkUser": checkUser, 
+    "checkUser": checkUser,
+    "getUsers": getUsers,
+    "getUserById": getUserById,
     "registerUser": registerUser, 
     "removeUser": removeUser
 };

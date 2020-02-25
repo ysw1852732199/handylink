@@ -1,14 +1,6 @@
 [
     {
         "id": "0",
-        "username": "yangchun",
-        "password": "Test@12345",
-        "sex": "male",
-        "birthday": "19890420",
-        "cardId": "xxxxxxxxxxx"
-    },
-    {
-        "id": "1",
         "username": "admin",
         "password": "123456",
         "sex": "famale",
@@ -16,10 +8,17 @@
         "cardId": ""
     },
     {
-        "id": "2",
-        "username": "aaaa",
-        "password": "aaaa",
+        "id": "1",
+        "username": "yangchun",
+        "password": "Test@12345",
         "sex": "male",
+        "birthday": "19890420",
+        "cardId": "xxxxxxxxxxx"
+    },{
+        "id": "2",
+        "username": "dingfangmin",
+        "password": "123456",
+        "sex": "famale",
         "birthday": "",
         "cardId": ""
     },
@@ -33,6 +32,14 @@
     },
     {
         "id": "4",
+        "username": "aaaa",
+        "password": "aaaa",
+        "sex": "male",
+        "birthday": "",
+        "cardId": ""
+    },
+    {
+        "id": "5",
         "username": "aaaa",
         "password": "aaaa",
         "sex": "male",

@@ -1,0 +1,17 @@
+错误码构成
+aaabbccdd
+aaa： http错误码
+bbcdd：网站自定义错误码
+
+bb：具体模块
+00：用户管理
+01：角色管理
+
+cc：请求类型
+00：GET
+01：POST
+02：PUT
+03：PATCH
+04：DELETE
+
+dd:具体错误码

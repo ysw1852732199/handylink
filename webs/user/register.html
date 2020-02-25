@@ -1,15 +1,20 @@
 <div>
-    <el-form label-width="100px" class="handylink-register-form">
-        <el-form-item label="用户名：">
-            <el-input v-model="userinfo.username"></el-input>
+    <el-form label-width="100px" class="handylink-register-form" :rules="rules" :model="userinfo" >
+        <el-form-item label="用户名：" prop="username">
+            <el-input v-model="userinfo.username"
+                    placeholder="请输入用户名"></el-input>
         </el-form-item>
-        <el-form-item label="密  码：">
-            <el-input v-model="userinfo.password"></el-input>
+        <el-form-item label="密  码：" prop="password">
+            <el-input v-model="userinfo.password" 
+                    placeholder="请输入密码"
+                    type="password" show-password></el-input>
         </el-form-item>
-        <el-form-item label="确认密码：">
-            <el-input v-model="userinfo.password_confirm"></el-input>
+        <el-form-item label="确认密码：" prop="password_confirm">
+            <el-input v-model="userinfo.password_confirm" 
+                    placeholder="请再次输入密码"
+                    type="password" show-password></el-input>
         </el-form-item>
-        <el-form-item label="性  别：">
+        <el-form-item label="性  别：" prop="sex">
             <el-radio v-model="userinfo.sex" label="male">男</el-radio>
             <el-radio v-model="userinfo.sex" label="famale">女</el-radio>
         </el-form-item>
