@@ -41,6 +41,13 @@ define([
             "level": "高",
             "description": ""
           },{
+            "name": "角色管理",
+            "author": "杨春",
+            "bgnTime": "-",
+            "endTime": "-",
+            "level": "高",
+            "description": ""
+          },{
             "name": "用户管理",
             "author": "杨春",
             "bgnTime": "2018/09/06",
@@ -64,16 +71,16 @@ define([
           },{
             "name": "CSS技能学习",
             "author": "杨春",
-            "bgnTime": "2018/09/05",
+            "bgnTime": "-",
             "endTime": "-",
-            "level": "高",
+            "level": "中",
             "description": ""
           },{
             "name": "域名备案",
             "author": "杨春",
-            "bgnTime": "2018/08/02",
+            "bgnTime": "-",
             "endTime": "-",
-            "level": "高",
+            "level": "低",
             "description": "将域名备案之后才能使用，否则无法使用。"
           },{
             "name": "对接百度",
