@@ -13,7 +13,7 @@ router.get('/api/logout', unisession.logout);
 router.get('/api/users', auth.getUsers)
 router.get('/api/users/:id', auth.getUserById)
 router.post('/api/user', auth.registerUser)
-router.delete('/api/user/:id', auth.removeUser)
+router.delete('/api/users/:id', auth.removeUser)
 
 // 角色管理
 // router.post('/api/roles', auth.registerUser)

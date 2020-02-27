@@ -23,22 +23,27 @@ function addUser(user) {
 }
 
 // 删除用户
-function removeUser() {
-	users = users.remove((item) => {
-		return item.Id == userId
+function removeUser(userId) {
+	userIndex = users.findIndex((item) => {
+		return item.id == String(userId)
 	})
+
+	if (userIndex == -1) {
+		return false
+	}
+
+	users.splice(userIndex, 1)
 	saveToFile()
 }
 
 
 function saveToFile() {
 	var content = JSON.stringify(users, null, 4);
-	console.log(content)
 	fs.writeFile(json_file_path, content, function(err) {
 	   if (err) {
 	       return console.error(err);
 	   }
-	   console.log("用户注册成功！");
+	   console.log("用户保存成功！");
 	});
 }
 

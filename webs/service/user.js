@@ -21,7 +21,13 @@
         getUser: function(id) {
             return instance({
                 method: 'GET',
-                url: '/api/users'
+                url: '/api/users/'+id
+            })
+        },
+        deleteUser: function(id) {
+            return instance({
+                method: 'DELETE',
+                url: '/api/users/'+id
             })
         }
     }

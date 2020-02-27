@@ -57,8 +57,17 @@ function registerUser(req, res) {
 }
 
 // 删除用户
-function removeUser(req, res) {
-    userManager.removeUser(user)
+function removeUser(req, resp) {
+    userId = req.params.id
+    if (util.isNull(userId)) {
+        res.json({
+            "errorCode": "400000000",
+            "errorMessage": "param is invaid."
+        })
+    }
+
+    resp_data = userManager.removeUser(userId)
+    resp.json(resp_data)
 }
 
 // 查询所有用户
@@ -68,9 +77,9 @@ function getUsers(req, res) {
 
 // 查询指定用户
 function getUserById(req, resp) {
-    usesId = req.param.id
+    userId = req.params.id
 
-    if (util.isNull(usesId)) {
+    if (util.isNull(userId)) {
         res.json({
             "errorCode": "400000000",
             "errorMessage": "param is invaid."

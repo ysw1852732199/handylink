@@ -14,7 +14,8 @@
         "sex": "male",
         "birthday": "19890420",
         "cardId": "xxxxxxxxxxx"
-    },{
+    },
+    {
         "id": "2",
         "username": "dingfangmin",
         "password": "123456",
@@ -24,24 +25,8 @@
     },
     {
         "id": "3",
-        "username": "aaaa",
-        "password": "aaaa",
-        "sex": "male",
-        "birthday": "",
-        "cardId": ""
-    },
-    {
-        "id": "4",
-        "username": "aaaa",
-        "password": "aaaa",
-        "sex": "male",
-        "birthday": "",
-        "cardId": ""
-    },
-    {
-        "id": "5",
-        "username": "aaaa",
-        "password": "aaaa",
+        "username": "aaa",
+        "password": "123456",
         "sex": "male",
         "birthday": "",
         "cardId": ""
