@@ -1,4 +1,4 @@
-userManager = require("./user")
+userManager = require("./user_manage_json")
 util = require("../util")
 
 // 检查用户是否存在

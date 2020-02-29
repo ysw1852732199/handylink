@@ -147,15 +147,25 @@
         ]],
         "programer": [[
             {
-                "id": "link00",
+                "id": "programer00",
+                "name": "开源中国",
+                "href": "https://www.oschina.net/",
+                "tips": "中文开源技术交流社区"
+            },{
+                "id": "programer01",
                 "name": "印记中文",
                 "href": "https://docschina.org/",
                 "tips": "印记中文出品，唯一与官方文档同步的中文文档"
             },{
-                "id": "link01",
+                "id": "programer02",
                 "name": "ShowDoc",
-                "href": "https://docschina.org/",
+                "href": "https://www.showdoc.cc/",
                 "tips": "一个非常适合IT团队的在线API文档、技术文档工具"
+            },{
+                "id": "programer03",
+                "name": "程序员客栈",
+                "href": "https://www.proginn.com/",
+                "tips": "领先的程序员自由远程工作平台"
             }]
         ]
     },
@@ -264,7 +274,7 @@
             },{
                 "id": "link01",
                 "name": "ShowDoc",
-                "href": "https://docschina.org/",
+                "href": "https://www.showdoc.cc/",
                 "tips": "一个非常适合IT团队的在线API文档、技术文档工具"
             }]
         ]

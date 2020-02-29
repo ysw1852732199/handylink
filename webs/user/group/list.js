@@ -1,9 +1,9 @@
 define([
-    'text!./manage.html',
+    'text!./list.html',
     'service/user'
   ], function(Template, user) {
     return {
-        name: "register",
+        name: "list",
         template: Template,
         data: function(){
             return {

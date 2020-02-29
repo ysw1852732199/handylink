@@ -1,11 +1,13 @@
 let users_json = "user.json"
-let users = require("./" + users_json)
 let pwd = process.cwd()
-let json_file_path = pwd + "/server/auth/" + users_json
+let json_file_path = pwd + "/server/mocks/" + users_json
 let fs = require("fs")
+let users = require(json_file_path)
 
 // 查询用户
 function getUsers() {
+	users = require(json_file_path)
+
 	return users
 }
 

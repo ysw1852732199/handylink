@@ -13,7 +13,7 @@
                         </el-dropdown-menu>
                     </el-dropdown>
                 </span>
-                <span class="float-right" v-else>你好，请<a href="/#/explore/session">登陆</a>或<a href="/#/user/register">注册</a></span>
+                <span class="float-right" v-else>你好，请<a href="/#/explore/session">登陆</a>或<a href="/#/register">注册</a></span>
             </div>
         </el-row>
         <el-row class="handylink-header-search">
@@ -81,7 +81,7 @@
             <el-row v-for="row_news in links.programer">
                 <el-col v-for="(link, index) in row_news" :key="index" style="text-align: center;" :span="4">
                     <el-tooltip :content="link.tips" effect="light" :disabled="!link.tips">
-                        <a :href='link.href'>{{ link.name }}</a>
+                        <a :href='link.href' target="_blank">{{ link.name }}</a>
                     </el-tooltip>
                 </el-col>
             </el-row>
@@ -89,6 +89,7 @@
     </el-main>
     <el-footer>
         <div class="handylink-footer">
+            <router-link to="/user/user">用户管理</router-link>
             <router-link to="/explore/todo">探索功能</router-link>
             <router-link to="/explore/">关于我</router-link>
             <router-link to="/about">关于网站</router-link>

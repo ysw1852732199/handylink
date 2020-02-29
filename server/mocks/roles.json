@@ -1,0 +1,28 @@
+[
+    {
+        "id": "0",
+        "roleName": "admin",
+        "roleDisplayName": {
+            "zh-cn": "管理员",
+            "en-us": "admin"
+        },
+        "pageAuth": {
+            "user_manage": true,
+            "role_manage": true
+        },
+        "api": ""
+    },
+    {
+        "id": "1",
+        "roleName": "customer",
+        "roleDisplayName": {
+            "zh-cn": "消费者",
+            "en-us": "customer"
+        },
+        "page": {
+            "user_manage": false,
+            "role_manage": false
+        },
+        "api": ""
+    }
+]

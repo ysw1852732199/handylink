@@ -12,7 +12,8 @@ define([
             username: "",
             password: "",
             sex: "male"
-          }
+          },
+          rules: {}
         }
       },
       methods: {

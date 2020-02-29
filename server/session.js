@@ -3,7 +3,7 @@ const FileStore = require('session-file-store')(session);
 
 // bug: node.js v8.11.3 版本不支持import语法
 // import checkUser from './auth';
-const auth = require('./auth/auth');
+const auth = require('./user/user');
 const session_name = "ssid";
 
 const session_config = {

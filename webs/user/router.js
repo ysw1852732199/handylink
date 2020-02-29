@@ -1,20 +1,24 @@
 // ES5
-define(["./user", "./register", "./manage"], function(User, Register, Manage) {
-    return {
-            path: "/user",
-            name: "user",
-            component: User,
-            children: [{
-                path: "",
-                redirect: ""
-            },{
-                path: "register",
-                name: "user_register",
-                component: Register
-            },{
-                path: "manage",
-                name: "user_manage",
-                component: Manage
-            }]
-        };
+define(["user/menu",
+    "./user/router",
+    "./user/register",
+    "./role/router",
+    "./group/router"], 
+    function(Menu, UserRouter, Register, RoleRouter, GroupRouter) {
+    return [{
+        path: "/user",
+        name: "user",
+        component: Menu,
+        children: [{
+            path: "",
+            redirect: "user"
+        },
+        UserRouter,
+        RoleRouter, 
+        GroupRouter]
+    },{
+        path: "/register",
+        name: "user_register",
+        component: Register
+    }];
 });

@@ -1,4 +1,4 @@
-let links_file = "./links.json";
+let links_file = "../mocks/links.json";
 
 function getLinks(req, res) {
     let all_links = require(links_file);
